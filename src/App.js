@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Nav />
 
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={ <CatList /> } />
           <Route path="/favorites" element={ <FavoriteList /> }/>
