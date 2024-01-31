@@ -1,0 +1,98 @@
+:root, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    font-family: sans-serif;
+
+    --blue-bg: #2196F3;
+    --dark-blue-bg: #1E88E5;
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/* Navbar CSS */
+.Nav {
+    display: flex;
+    justify-content: flex-start;
+
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding-left: 40px;
+    
+    box-shadow: var(--shadow);
+    background: var(--blue-bg);
+}
+
+.Link {
+    display: flex;
+    align-items: center;
+
+    padding: 1em;
+    height: 64px;
+
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Link:hover {
+    background-color: var(--dark-blue-bg);
+}
+
+/* CatList and FavoriteList CSS */
+.CatList, .FavoriteList {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.List {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card CSS */
+.Card {
+    position: relative;
+    
+    margin: 1.4em;
+}
+
+.Card .Image:hover {
+    transition: 0.1s ease-in-out;
+    transform: scale(1.1);
+    
+    box-shadow: var(--shadow);
+}
+
+.Card .Image {
+    background-size: cover;
+    background-position: center;
+
+    width: 225px;
+    height: 225px;
+
+    cursor: pointer;
+}
+
+/* Heart CSS */
+.Heart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    margin: 1em;
+}
